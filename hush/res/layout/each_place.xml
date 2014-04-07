@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_layout"
+    style="@style/Match"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <!-- ID -->
+
+    <TextView
+        android:id="@+id/place_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_id"
+        android:visibility="gone" />
+
+    <!-- Location Label -->
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="15dip"
+        android:text="@string/location"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- Location Value -->
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!--
+        <ImageView
+        android:id="@+id/photo"
+        android:layout_width="55dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY">
+    -->
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@style/Wrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:scaleX="1.50"
+        android:scaleY="1.50" />
+
+    <!-- Name Value -->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_label"
+        android:layout_below="@+id/name_label" />
+
+    <!-- Name Label -->
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/checkBox"
+        android:text="@string/name"
+        android:textStyle="bold" />
+
+    <!-- Address Value -->
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/address_label"
+        android:layout_below="@+id/address_label" />
+
+    <!-- Address Label -->
+
+    <TextView
+        android:id="@+id/address_label"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:text="@string/address"
+        android:textStyle="bold" />
+
+</RelativeLayout>

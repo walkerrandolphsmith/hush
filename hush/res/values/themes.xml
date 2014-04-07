@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Hush" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar.Solid</item>
+        <item name="android:actionModeStyle">@style/Widget.ActionMode</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_hush</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_hush</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_hush</item>
+    </style>
+
+    <style name="Fill">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ActionBar.Solid" parent="@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/action_bar</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_hush</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_hush</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Text</item>
+        <item name="android:actionBarDivider">@color/action_bar_text</item>
+    </style>
+
+    <style name="ActionBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/action_bar_text</item>
+    </style>
+
+    <style name="Widget.ActionMode" parent="@style/Widget.Sherlock.ActionBar.Solid">
+        <item name="android:actionModeBackground">@color/action_bar</item>
+        <item name="android:background">@color/action_bar</item>
+        <item name="android:height">?android:attr/actionBarSize</item>
+        <item name="android:titleTextStyle">@color/black</item>
+    </style>
+
+    <style name="NavigationDrawer">
+        <item name="android:layout_gravity">start</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:divider">@color/gray</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:layout_width">300dp</item>
+    </style>
+
+    <!-- Progress Dialog with Transparent Background -->
+    <style name="CutomAlertDialogLoadMarkers" parent="@android:style/Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+    </style>
+    <!-- Progress Dialog -->
+
+    <style name="Button" parent="android:Widget.Button"></style>
+
+</resources>

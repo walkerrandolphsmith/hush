@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pressed_hush">#CC33B5E5</color>
+    <color name="action_bar">#143360</color>
+    <color name="action_bar_text">#FFFFFF</color>
+        <color name="assistance_bar">#22143360</color>
+    <color name="stacked">#000000</color>
+    <color name="accent">#33b5e5</color>
+    <color name="action_mode">#000000</color>
+    <color name="action_mode_highlight">#33b5e5</color> 
+    
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#F1F1F1</color>
+</resources>

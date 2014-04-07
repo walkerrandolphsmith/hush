@@ -1,0 +1,58 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    style="@style/Match" >
+
+    <RelativeLayout style="@style/Match" >
+
+        <fragment
+            android:id="@+id/map"
+            style="@style/Wrap"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+        
+        <LinearLayout
+            android:id="@+id/assistance_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@color/assistance_bar">
+            <TextView
+                android:id="@+id/assistance_text"
+                android:layout_width="fill_parent"
+          		android:layout_height="wrap_content"
+           	    android:text="@string/ar_welcome" >
+                
+            </TextView>
+            
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/current"
+            style="@style/Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="47dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/map_active_current" />
+
+        <Button
+            android:id="@+id/draw"
+            style="@style/Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="97dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/map_active_draw" />
+
+        <com.hush.CanvasView
+            android:id="@+id/canvas"
+            style="@style/Fill" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        style="@style/Match" />
+
+    <ListView
+        android:id="@+id/drawer_list"
+        style="@style/NavigationDrawer"
+        android:layout_height="match_parent" />
+
+</android.support.v4.widget.DrawerLayout>
